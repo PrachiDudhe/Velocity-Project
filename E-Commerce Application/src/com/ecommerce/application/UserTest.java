@@ -1,5 +1,6 @@
 package com.ecommerce.application;
 import java.util.Scanner;
+import com.ecommerce.application.guest.role.*;
 
 public class UserTest {
 
@@ -82,7 +83,10 @@ public class UserTest {
 				ua5.purchaseItems();
 				
 			break;
-			
+			case 13: GuestAction ga=new GuestAction();
+			          ga.viewProducts();
+			          break;
+			          
 			default:
 				System.out.println("Kindly Choose number between 1 to 6 to perform operation");
 			break;
